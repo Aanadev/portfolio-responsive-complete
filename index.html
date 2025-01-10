@@ -167,12 +167,30 @@
                         <img src="assets/img/work6.jpg" alt="">
                     </a>
                 </div>
-            </section>
-            <section id="recommendation" class="blank-space">
-    <div style="height: 50px;"></div> <!-- Creates blank space -->
+            
+            <!--===== RECOMMENDATION =====-->
+                <section id="recommendation" class="recommendation-section">
     <h2>Words of Recommendation</h2>
-    <p id="recommendation-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-            </section>
+
+    <!-- Carousel container -->
+    <div class="recommendation-carousel">
+        <!-- Left arrow for manual navigation -->
+        <button class="arrow left-arrow" onclick="prevRecommendation()">&#10094;</button>
+
+        <!-- Company recommendation -->
+        <div class="recommendation-item">
+            <img src="assets/img/company1.png" alt="Company Logo" class="company-logo" />
+            <h3 id="company-name">Company Name</h3>
+            <p id="recommendation-text">“Be my recommender.”</p>
+        </div>
+
+        <!-- Right arrow for manual navigation -->
+        <button class="arrow right-arrow" onclick="nextRecommendation()">&#10095;</button>
+    </div>
+</section>
+
+
+
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>

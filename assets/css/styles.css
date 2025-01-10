@@ -218,6 +218,8 @@ img {
 }
 .home__blob {
   fill: var(--first-color);
+  position: relative;
+  top: 10px; /* Moves it down by 10px */
 }
 .home__blob-img {
   width: 360px;

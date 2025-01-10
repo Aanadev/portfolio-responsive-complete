@@ -217,7 +217,7 @@ img {
 .home__blob {
   fill: var(--first-color);
   position: relative;
-  top: 30px; /* Moves it down by 10px */
+  top: 40px; /* Moves it down by 10px */
 }
 .home__blob-img {
   width: 360px;

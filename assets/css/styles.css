@@ -197,8 +197,6 @@ img {
 .home__social {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center icons horizontally */
-  align-items: center; /* Vertically align the icons in the middle */
   gap: 10px; /* Add spacing between icons (you can adjust the value) */
 }
 .home__social-icon {

@@ -217,7 +217,7 @@ img {
 .home__blob {
   fill: var(--first-color);
   position: relative;
-  top: 10px; /* Moves it down by 10px */
+  top: 20px; /* Moves it down by 10px */
 }
 .home__blob-img {
   width: 360px;
@@ -342,7 +342,7 @@ img {
 .recommendation-section h2 {
   font-size: 2rem; /* Matches --h2-font-size */
   font-weight: 600; /* Matches --font-semi */
-  color: #3498db; /* Replace with --first-color */
+  color: var(--first-color); /* Replace with --first-color */
   margin-bottom: 1rem; /* Matches --mb-4 */
 }
 
@@ -375,7 +375,7 @@ img {
 #company-name {
   font-size: 1.5rem; /* Matches --h3-font-size */
   font-weight: 600; /* Matches --font-semi */
-  color: #2c82c9; /* Replace with --first-color-alt */
+  color: var(--first-color); /* Replace with --first-color-alt */
   margin-bottom: 1rem; /* Matches --mb-2 */
 }
 
@@ -383,7 +383,7 @@ img {
 #recommendation-text {
   font-size: 1rem; /* Matches --normal-font-size */
   font-weight: 400; /* Matches --font-regular */
-  color: #555; /* Replace with --text-color */
+  color: var(--text-color); /* Replace with --text-color */
   margin-bottom: 1rem; /* Matches --mb-4 */
   padding: 0 2rem; /* Padding for better readability */
   font-style: italic;
@@ -400,7 +400,7 @@ img {
 .recommendation__navigation__arrow {
   font-size: 1.5rem; /* Matches your design */
   cursor: pointer;
-  color: #3498db; /* Replace with --first-color */
+  color: var(--first-color); /* Replace with --first-color */
   transition: transform 0.3s;
 }
 

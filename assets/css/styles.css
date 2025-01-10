@@ -324,10 +324,14 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
-/* Recommendation Section */
+/* ===== Recommendation Section ===== */
 .recommendation-section {
-  row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  row-gap: 2rem;
+  margin-top: 2rem;
   padding: 50px 20px;
   background-color: #f9f9f9; /* Light background */
   border-radius: 8px;
@@ -336,9 +340,10 @@ img {
 
 /* Heading */
 .recommendation-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #333; /* Darker heading color */
+  font-size: 2rem; /* Matches --h2-font-size */
+  font-weight: 600; /* Matches --font-semi */
+  color: #3498db; /* Replace with --first-color */
+  margin-bottom: 1rem; /* Matches --mb-4 */
 }
 
 /* Carousel Container */
@@ -346,6 +351,7 @@ img {
   position: relative;
   display: inline-block;
   max-width: 400px;
+  margin-top: 2rem; /* Spacing above carousel */
 }
 
 /* Circular Company Logo */
@@ -353,26 +359,56 @@ img {
   width: 150px;
   height: 150px;
   border-radius: 50%; /* Makes the image circular */
+  overflow: hidden;
   margin: 0 auto;
   display: block;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); /* Shadow effect */
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Company Name */
 #company-name {
-  font-size: 20px;
-  margin: 15px 0;
-  color: #444; /* Slightly lighter text */
+  font-size: 1.5rem; /* Matches --h3-font-size */
+  font-weight: 600; /* Matches --font-semi */
+  color: #2c82c9; /* Replace with --first-color-alt */
+  margin-bottom: 1rem; /* Matches --mb-2 */
 }
 
 /* Recommendation Text */
 #recommendation-text {
-  font-size: 16px;
+  font-size: 1rem; /* Matches --normal-font-size */
+  font-weight: 400; /* Matches --font-regular */
+  color: #555; /* Replace with --text-color */
+  margin-bottom: 1rem; /* Matches --mb-4 */
+  padding: 0 2rem; /* Padding for better readability */
   font-style: italic;
-  color: #666; /* Light gray text */
 }
 
-/* Arrows */
+/* Navigation Arrows */
+.recommendation__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.recommendation__navigation__arrow {
+  font-size: 1.5rem; /* Matches your design */
+  cursor: pointer;
+  color: #3498db; /* Replace with --first-color */
+  transition: transform 0.3s;
+}
+
+.recommendation__navigation__arrow:hover {
+  transform: scale(1.2); /* Enlarge on hover */
+}
+
+/* Arrows for Carousel */
 .arrow {
   position: absolute;
   top: 50%;
@@ -393,7 +429,6 @@ img {
   right: -50px;
 }
 
-/* Hover Effect on Arrows */
 .arrow:hover {
   color: #007BFF; /* Blue color on hover */
 }
